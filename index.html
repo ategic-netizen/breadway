@@ -5,56 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BreadWay.org — Bread Stickers, Signs, and the Good News of Jesus</title>
     <meta name="description" content="Spread the Gospel with the Bread symbol. Buy stickers and signs, bless your home, and support the mission at BreadWay.org." />
+  
     <style>
   :root { --gold:#fbbf24; }
   body { font-family: Arial, sans-serif; margin:0; background:#111; color:#fff; line-height:1.6; }
-  header, section, footer { padding:40px 20px; max-width:1200px; margin:auto; }
+  header, section, footer { padding:40px 20px; max-width:960px; margin:auto; }
   header { background:#222; }
-  header .row { display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
-  header .logo-block { flex:0 0 25%; display:flex; justify-content:center; }
-  header img.logo { width:100%; max-width:220px; height:auto; object-fit:contain; background:#eee; border-radius:12px; padding:10px; }
-  header .text-block { flex:1; min-width:260px; }
-  header h1 { margin:0; font-size:2.5em; color:var(--gold); }
-  header .tagline { color:#ddd; font-size:1rem; margin-top:6px; }
-  header p.description { max-width:760px; margin:12px 0 0; color:#ddd; }
-  nav { margin-top:16px; }
+  header .row { display:flex; align-items:center; gap:20px; justify-content:center; }
+  header img.logo { width:180px; height:auto; object-fit:contain; border-radius:12px; background:#eee; padding:8px; }
+  header h1 { margin:0; font-size:2.4em; color:var(--gold); }
+  nav { text-align:center; margin-top:16px; }
   nav a { margin:0 12px; color:#fff; text-decoration:none; font-weight:500; }
   nav a:hover { color:var(--gold); }
-
-  /* Mobile responsiveness */
-  @media(max-width:768px){
-    header .row { flex-direction:column; align-items:center; text-align:center; }
-    header .logo-block { flex:0 0 auto; margin-bottom:20px; }
-    header .text-block { flex:0 0 auto; }
-    nav { margin-top:20px; }
-  }
+  h2 { color:var(--gold); margin-top:0; }
+  .card { background:#fff; color:#000; border-radius:10px; padding:20px; margin:20px 0; }
+  .card img { width:100%; height:auto; border-radius:8px; }
+  .btn { display:inline-block; background:#006aff; color:#fff; padding:12px 22px; margin-top:10px; border-radius:6px; text-decoration:none; }
+  footer { background:#222; text-align:center; font-size:0.9em; color:#aaa; }
+  blockquote { border-left:4px solid var(--gold); padding-left:12px; margin:10px 0; font-style:italic; }
+  .scripture-banner { background:#1a1a1a; border:1px solid #333; padding:14px 16px; border-radius:10px; text-align:center; margin-top:16px; }
 </style>
 </head>
 <body>
   <header>
     <div class="row">
-      <!-- Large logo on left (or top on mobile) -->
-      <div class="logo-block">
-        <img class="logo" src="bread_logo.png" alt="BreadWay logo"/>
-      </div>
-      <!-- Text and nav -->
-      <div class="text-block">
-        <h1>The Bread Way</h1>
-        <div class="tagline">A simple symbol. A saving message.</div>
-        <p class="description">
-          BreadWay.org exists to spread the Good News of Jesus with a humble sign: the bread.
-          Get a sticker, place a sign, bless your home, and spark conversations that point to the Bread of Life (John 6:35).
-        </p>
-        <nav>
-          <a href="#gospel">Good News</a>
-          <a href="#saved">How to Be Saved</a>
-          <a href="#bless">Bless This House</a>
-          <a href="#store">Store</a>
-          <a href="#donate">Donate</a>
-          <a href="#contact">Contact</a>
-        </nav>
+      <img class="logo" src="bread_logo.png" alt="BreadWay logo"/>
+      <div>
+        <h1 style="line-height:1.1;margin-bottom:4px;">The Bread Way</h1>
+        <div style="color:#ddd; font-size:.95rem;">A simple symbol. A saving message.</div>
       </div>
     </div>
+    <p style="max-width:760px;margin:12px auto 0;color:#ddd;text-align:center;">
+      BreadWay.org exists to spread the Good News of Jesus with a humble sign: the bread.
+      Get a sticker, place a sign, bless your home, and spark conversations that point to the Bread of Life (John 6:35).
+    </p>
+    <nav>
+      <a href="#gospel">Good News</a>
+      <a href="#saved">How to Be Saved</a>
+      <a href="#bless">Bless This House</a>
+      <a href="#store">Store</a>
+      <a href="#donate">Donate</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
     <section id="gospel">
