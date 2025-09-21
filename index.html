@@ -14,16 +14,20 @@
     <meta name="keywords" content="bread of life, BreadWay, Christian stickers, Bible signs, Jesus bread, Gospel yard signs, scripture signs, John 6:35" />
 
     <style>
-      :root { --gold:#fbbf24; }
-      body { font-family: Arial, sans-serif; margin:0; background:#111; color:#fff; line-height:1.6; }
+      :root { --gold:#fbbf24; --nav-h:56px; }
+
+      html { scroll-behavior:smooth; scroll-padding-top:var(--nav-h); }
+      body { font-family: Arial, sans-serif; margin:0; background:#111; color:#fff; line-height:1.6; padding-top:var(--nav-h); }
+
       header, section, footer { padding:40px 20px; max-width:960px; margin:auto; }
       header { background:#222; }
       header .row { display:flex; align-items:center; gap:20px; justify-content:flex-start; }
       header img.logo { width:120px; height:auto; object-fit:contain; border-radius:12px; background:#eee; }
       header h1 { margin:0; font-size:2.4em; color:var(--gold); }
-      nav { text-align:center; margin-top:20px; }
-      nav a { margin:0 12px; color:#fff; text-decoration:none; }
+
       h2 { color:var(--gold); margin-top:0; }
+      nav a { color:#fff; text-decoration:none; }
+
       .card { background:#fff; color:#000; border-radius:10px; padding:20px; margin:20px 0; }
       .card img { width:100%; height:auto; border-radius:8px; }
       .btn { display:inline-block; background:#006aff; color:#fff; padding:12px 22px; margin-top:10px; border-radius:6px; text-decoration:none; font-weight:bold; }
@@ -31,8 +35,15 @@
       blockquote { border-left:4px solid var(--gold); padding-left:12px; margin:10px 0; font-style:italic; }
       .scripture-banner { background:#1a1a1a; border:1px solid #333; padding:14px 16px; border-radius:10px; text-align:center; margin-top:16px; }
 
-      /* Sticky navigation on scroll */
-      .sticky-nav { position: sticky; top: 0; z-index: 999; background:#000; padding:12px 0; border-bottom:1px solid #333; }
+      /* FIXED NAV (always visible) */
+      .site-nav{
+        position:fixed; top:0; left:0; right:0;
+        z-index:1000; background:#000; border-bottom:1px solid #333;
+      }
+      .site-nav .inner{
+        max-width:960px; margin:0 auto; padding:12px 20px; text-align:center;
+      }
+      .site-nav a{ display:inline-block; margin:0 10px; color:#fbbf24; }
 
       /* Mobile header stacking: logo on top */
       @media (max-width: 640px) {
@@ -40,10 +51,24 @@
         .logo-wrap { order:-1; width:100%; max-width:280px; }
         .logo-wrap img.logo { width:100%; height:auto; border-radius:10px; background:#fff; padding:6px; }
         header h1 { font-size:2em; }
+        :root { --nav-h:64px; } /* a bit taller on small screens if links wrap */
       }
     </style>
   </head>
   <body>
+
+    <!-- FIXED NAV lives outside header -->
+    <nav id="site-nav" class="site-nav">
+      <div class="inner">
+        <a href="#gospel">Good News</a>
+        <a href="#saved">How to Be Saved</a>
+        <a href="#welcoming-blessings">Blessings</a>
+        <a href="#store">Store</a>
+        <a href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
     <header style="padding:20px; background:#000; color:#fff;">
       <div class="row" style="display:flex; align-items:center; gap:20px;">
         <!-- Logo takes up 1/4 width on desktop; stacks on mobile -->
@@ -63,16 +88,6 @@
         BreadWay.org exists to spread the Good News of Jesus with a humble sign: the bread.
         Get a sticker, place a sign, bless your home, and spark conversations that point to the Bread of Life (John 6:35).
       </p>
-
-      <!-- Navigation (now sticky) -->
-      <nav class="sticky-nav" style="margin-top:16px; text-align:center;">
-        <a href="#gospel" style="margin:0 10px; color:#fbbf24; text-decoration:none;">Good News</a>
-        <a href="#saved" style="margin:0 10px; color:#fbbf24; text-decoration:none;">How to Be Saved</a>
-        <a href="#welcoming-blessings" style="margin:0 10px; color:#fbbf24; text-decoration:none;">Blessings</a>
-        <a href="#store" style="margin:0 10px; color:#fbbf24; text-decoration:none;">Store</a>
-        <a href="#donate" style="margin:0 10px; color:#fbbf24; text-decoration:none;">Donate</a>
-        <a href="#contact" style="margin:0 10px; color:#fbbf24; text-decoration:none;">Contact</a>
-      </nav>
     </header>
 
     <section id="gospel">
@@ -354,4 +369,3 @@
     </footer>
   </body>
 </html>
-
