@@ -12,58 +12,70 @@
 
     <!-- Keywords (optional, not used by Google but fine to include) -->
     <meta name="keywords" content="bread of life, BreadWay, Christian stickers, Bible signs, Jesus bread, Gospel yard signs, scripture signs, John 6:35" />
+
+    <style>
+      :root { --gold:#fbbf24; }
+      body { font-family: Arial, sans-serif; margin:0; background:#111; color:#fff; line-height:1.6; }
+      header, section, footer { padding:40px 20px; max-width:960px; margin:auto; }
+      header { background:#222; }
+      header .row { display:flex; align-items:center; gap:20px; justify-content:flex-start; }
+      header img.logo { width:120px; height:auto; object-fit:contain; border-radius:12px; background:#eee; }
+      header h1 { margin:0; font-size:2.4em; color:var(--gold); }
+      nav { text-align:center; margin-top:20px; }
+      nav a { margin:0 12px; color:#fff; text-decoration:none; }
+      h2 { color:var(--gold); margin-top:0; }
+      .card { background:#fff; color:#000; border-radius:10px; padding:20px; margin:20px 0; }
+      .card img { width:100%; height:auto; border-radius:8px; }
+      .btn { display:inline-block; background:#006aff; color:#fff; padding:12px 22px; margin-top:10px; border-radius:6px; text-decoration:none; font-weight:bold; }
+      footer { background:#222; text-align:center; font-size:0.9em; color:#aaa; }
+      blockquote { border-left:4px solid var(--gold); padding-left:12px; margin:10px 0; font-style:italic; }
+      .scripture-banner { background:#1a1a1a; border:1px solid #333; padding:14px 16px; border-radius:10px; text-align:center; margin-top:16px; }
+
+      /* Sticky navigation on scroll */
+      .sticky-nav { position: sticky; top: 0; z-index: 999; background:#000; padding:12px 0; border-bottom:1px solid #333; }
+
+      /* Mobile header stacking: logo on top */
+      @media (max-width: 640px) {
+        header .row { flex-direction: column; align-items:center; text-align:center; }
+        .logo-wrap { order:-1; width:100%; max-width:280px; }
+        .logo-wrap img.logo { width:100%; height:auto; border-radius:10px; background:#fff; padding:6px; }
+        header h1 { font-size:2em; }
+      }
+    </style>
   </head>
-  <style>
-  :root { --gold:#fbbf24; }
-  body { font-family: Arial, sans-serif; margin:0; background:#111; color:#fff; line-height:1.6; }
-  header, section, footer { padding:40px 20px; max-width:960px; margin:auto; }
-  header { background:#222; }
-  header .row { display:flex; align-items:center; gap:20px; justify-content:flex-start; }
-  header img.logo { width:120px; height:auto; object-fit:contain; border-radius:12px; background:#eee; }
-  header h1 { margin:0; font-size:2.4em; color:var(--gold); }
-  nav { text-align:center; margin-top:20px; }
-  nav a { margin:0 12px; color:#fff; text-decoration:none; }
-  h2 { color:var(--gold); margin-top:0; }
-  .card { background:#fff; color:#000; border-radius:10px; padding:20px; margin:20px 0; }
-  .card img { width:100%; height:auto; border-radius:8px; }
-  .btn { display:inline-block; background:#006aff; color:#fff; padding:12px 22px; margin-top:10px; border-radius:6px; text-decoration:none; }
-  footer { background:#222; text-align:center; font-size:0.9em; color:#aaa; }
-  blockquote { border-left:4px solid var(--gold); padding-left:12px; margin:10px 0; font-style:italic; }
-  .scripture-banner { background:#1a1a1a; border:1px solid #333; padding:14px 16px; border-radius:10px; text-align:center; margin-top:16px; }
-</style>
-</head>
-<body>
- <header style="padding:20px; background:#000; color:#fff;">
-  <div class="row" style="display:flex; align-items:center; gap:20px;">
-    <!-- Logo takes up 1/4 width -->
-    <div style="flex:1; max-width:25%; text-align:left;">
-      <img src="bread_logo.png" alt="BreadWay logo" style="width:100%; height:auto; display:block; background:#fff; border-radius:8px; padding:6px;" />
-    </div>
+  <body>
+    <header style="padding:20px; background:#000; color:#fff;">
+      <div class="row" style="display:flex; align-items:center; gap:20px;">
+        <!-- Logo takes up 1/4 width on desktop; stacks on mobile -->
+        <div class="logo-wrap" style="flex:1; max-width:25%; text-align:left;">
+          <img class="logo" src="bread_logo.png" alt="BreadWay logo" style="width:100%; height:auto; display:block; background:#fff; border-radius:8px; padding:6px;" />
+        </div>
 
-    <!-- Title and subtitle -->
-    <div style="flex:3;">
-      <h1 style="line-height:1.1; margin-bottom:4px; color:#fbbf24;">The Bread Way</h1>
-      <div style="color:#ddd; font-size:.95rem;">A simple symbol. A saving message.</div>
-    </div>
-  </div>
+        <!-- Title and subtitle -->
+        <div style="flex:3;">
+          <h1 style="line-height:1.1; margin-bottom:4px; color:#fbbf24;">The Bread Way</h1>
+          <div style="color:#ddd; font-size:.95rem;">A simple symbol. A saving message.</div>
+        </div>
+      </div>
 
-  <!-- Mission text -->
-  <p style="max-width:760px; margin:12px auto 0; color:#ddd; text-align:center;">
-    BreadWay.org exists to spread the Good News of Jesus with a humble sign: the bread.
-    Get a sticker, place a sign, bless your home, and spark conversations that point to the Bread of Life (John 6:35).
-  </p>
+      <!-- Mission text -->
+      <p style="max-width:760px; margin:12px auto 0; color:#ddd; text-align:center;">
+        BreadWay.org exists to spread the Good News of Jesus with a humble sign: the bread.
+        Get a sticker, place a sign, bless your home, and spark conversations that point to the Bread of Life (John 6:35).
+      </p>
 
-  <!-- Navigation -->
-  <nav style="margin-top:16px; text-align:center;">
-    <a href="#gospel" style="margin:0 10px; color:#fbbf24; text-decoration:none;">Good News</a>
-    <a href="#saved" style="margin:0 10px; color:#fbbf24; text-decoration:none;">How to Be Saved</a>
-    <a href="#bless" style="margin:0 10px; color:#fbbf24; text-decoration:none;">Bless This House</a>
-    <a href="#store" style="margin:0 10px; color:#fbbf24; text-decoration:none;">Store</a>
-    <a href="#donate" style="margin:0 10px; color:#fbbf24; text-decoration:none;">Donate</a>
-    <a href="#contact" style="margin:0 10px; color:#fbbf24; text-decoration:none;">Contact</a>
-  </nav>
-</header>
-      <section id="gospel">
+      <!-- Navigation (now sticky) -->
+      <nav class="sticky-nav" style="margin-top:16px; text-align:center;">
+        <a href="#gospel" style="margin:0 10px; color:#fbbf24; text-decoration:none;">Good News</a>
+        <a href="#saved" style="margin:0 10px; color:#fbbf24; text-decoration:none;">How to Be Saved</a>
+        <a href="#welcoming-blessings" style="margin:0 10px; color:#fbbf24; text-decoration:none;">Blessings</a>
+        <a href="#store" style="margin:0 10px; color:#fbbf24; text-decoration:none;">Store</a>
+        <a href="#donate" style="margin:0 10px; color:#fbbf24; text-decoration:none;">Donate</a>
+        <a href="#contact" style="margin:0 10px; color:#fbbf24; text-decoration:none;">Contact</a>
+      </nav>
+    </header>
+
+    <section id="gospel">
       <h2>The Good News</h2>
       <p>Jesus said, “I am the bread of life” (John 6:35). God made you for Himself. Our sin separates us from Him, but Jesus died and rose again so that all who trust Him are forgiven and have eternal life.</p>
       <ul>
@@ -90,121 +102,162 @@
       <p>You can pray: <em>“Jesus, I believe You died for my sins and rose again. Forgive me, make me new, and help me follow You. Amen.”</em></p>
     </section>
 
-<!-- Next Steps -->
-<section id="next-steps" class="border-t border-white/10 bg-white/5">
-  <div class="max-w-6xl mx-auto px-4 py-20">
-    <h2 class="text-3xl md:text-4xl font-bold text-white">Next Steps</h2>
-    <p class="mt-4 text-slate-200/90">
-      Have you decided to follow Jesus or want to grow deeper? Here are some practical next steps:
-    </p>
-
-    <div class="mt-8 grid md:grid-cols-2 gap-6">
-      <div class="bg-black/30 border border-white/10 rounded-2xl p-6">
-        <h3 class="text-xl font-semibold text-amber-300">1. Pray</h3>
-        <p class="mt-2 text-slate-200/90">Talk with God daily. Share your heart and listen to His Word.</p>
-      </div>
-      <div class="bg-black/30 border border-white/10 rounded-2xl p-6">
-        <h3 class="text-xl font-semibold text-amber-300">2. Read the Bible</h3>
-        <p class="mt-2 text-slate-200/90">Begin with the Gospel of John or Mark. Read a little each day.</p>
-      </div>
-
-      <div class="bg-black/30 border border-white/10 rounded-2xl p-6">
-        <h3 class="text-xl font-semibold text-amber-300">3. Find Community</h3>
-        <p class="mt-2 text-slate-200/90">
-          Join a Bible-believing church or small group for support and growth.
-          <a href="https://mychurchfinder.org/" target="_blank" class="underline text-amber-400 hover:text-amber-300">
-            Find a church near you →
-          </a>
+    <!-- Next Steps -->
+    <section id="next-steps" class="border-t border-white/10 bg-white/5">
+      <div class="max-w-6xl mx-auto px-4 py-20">
+        <h2 class="text-3xl md:text-4xl font-bold text-white">Next Steps</h2>
+        <p class="mt-4 text-slate-200/90">
+          Have you decided to follow Jesus or want to grow deeper? Here are some practical next steps:
         </p>
+
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+          <div class="bg-black/30 border border-white/10 rounded-2xl p-6">
+            <h3 class="text-xl font-semibold text-amber-300">1. Pray</h3>
+            <p class="mt-2 text-slate-200/90">Talk with God daily. Share your heart and listen to His Word.</p>
+          </div>
+          <div class="bg-black/30 border border-white/10 rounded-2xl p-6">
+            <h3 class="text-xl font-semibold text-amber-300">2. Read the Bible</h3>
+            <p class="mt-2 text-slate-200/90">Begin with the Gospel of John or Mark. Read a little each day.</p>
+          </div>
+
+          <div class="bg-black/30 border border-white/10 rounded-2xl p-6">
+            <h3 class="text-xl font-semibold text-amber-300">3. Find Community</h3>
+            <p class="mt-2 text-slate-200/90">
+              Join a Bible-believing church or small group for support and growth.
+              <a href="https://mychurchfinder.org/" target="_blank" class="underline text-amber-400 hover:text-amber-300">
+                Find a church near you →
+              </a>
+            </p>
+          </div>
+
+          <div class="bg-black/30 border border-white/10 rounded-2xl p-6">
+            <h3 class="text-xl font-semibold text-amber-300">4. Be Baptized</h3>
+            <p class="mt-2 text-slate-200/90">Take the step of baptism as a public declaration of your faith.</p>
+          </div>
+        </div>
       </div>
-<div class="bg-black/30 border border-white/10 rounded-2xl p-6">
-  <h3 class="text-xl font-semibold text-amber-300">4. Be Baptized</h3>
-  <p class="mt-2 text-slate-200/90">Take the step of baptism as a public declaration of your faith.</p>
-</div>
+    </section>
 
-<section id="about" style="background:#111; padding:40px 20px; text-align:center; color:#fff;">
-  <h2 style="color:#fbbf24; font-size:2em; margin-bottom:20px;">BreadWay.org</h2>
-  <p style="max-width:800px; margin:0 auto 30px; font-size:1.1em; line-height:1.6; color:#ddd;">
-    BreadWay.org exists to share the Good News of Jesus and help others come to Christ through a simple, 
-    recognizable symbol—the bread. When people visit this site, they can find a clear, simple message of 
-    hope in Jesus. If you’d like to help spread the Good News, consider placing a sticker on your car or 
-    window, or a sign in your yard, business, or church. Every purchase helps keep this site online, funds 
-    the creation of stickers and signs, and helps distribute them to more people.
-  </p>
-  <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
-    <a href="#contact" class="btn" style="background:#006aff; color:#fff; padding:12px 22px; border-radius:6px; text-decoration:none; font-weight:bold;">Contact Us</a>
-    <a href="#store" class="btn" style="background:#fbbf24; color:#000; padding:12px 22px; border-radius:6px; text-decoration:none; font-weight:bold;">Back to Shop</a>
-    <a href="#donate" class="btn" style="background:#444; color:#fff; padding:12px 22px; border-radius:6px; text-decoration:none; font-weight:bold;">Donate</a>
-  </div>
-</section>
-<!-- Bless section (continuation of the invitation to share) -->
-<section id="bless" class="border-t border-white/10 bg-white/5">
-  <div class="max-w-6xl mx-auto px-4 py-16">
-    <h2 class="text-2xl md:text-3xl font-bold text-white">“Bless all who pass this house.”</h2>
-    <p class="mt-4 text-slate-200/90">
-      Place a simple blessing in your window or entryway as a quiet witness over your home—and for all who pass by.
-      Signs and stickers are a gentle way to point people to Jesus and invite conversation.
-    </p>
-    <blockquote class="mt-6 border-l-4 border-amber-600 pl-4 italic text-slate-100/90">
-      “The Lord bless you and keep you; the Lord make his face to shine upon you and be gracious to you;
-      the Lord lift up his countenance upon you and give you peace.” — Numbers 6:24–26
-    </blockquote>
-  </div>
-</section>
+    <!-- REPLACEMENT CONTENT starts here -->
+    <section id="welcoming-blessings" style="background:#111; padding:40px 20px; text-align:left; color:#fff;">
+      <h2 style="color:#fbbf24; font-size:2em; margin-bottom:20px;">Welcoming Blessings: How Scripture Inspires Us to Bless Those Who Pass By</h2>
+      <p style="max-width:800px; margin:0 0 16px; font-size:1.05em; line-height:1.7; color:#ddd;">
+        BreadWay.org exists to share the Good News of Jesus through a simple, familiar symbol: the bread. Whether displayed on a car, home, storefront, or church, our signs and stickers serve as silent messengers, offering blessings, inviting reflection, and pointing others to Christ.
+      </p>
+      <p style="max-width:800px; margin:0 0 22px; font-size:1.05em; line-height:1.7; color:#ddd;">
+        Each product is more than just a sign. It is a prayer in motion and a spark for conversation. Every item purchased helps us continue creating and distributing these messages of hope, so that more hearts can be reached and more lives can be touched.
+      </p>
 
-    <section id="store">
-      <h2>Store</h2>
-<!-- Store Section -->
-<section id="store" style="padding:40px; background:#f9f9f9;">
-  <h2 style="text-align:center; font-size:28px; margin-bottom:30px; font-family:Helvetica, Arial, sans-serif;">Shop BreadWay.org Products</h2>
+      <h3 style="color:#fbbf24; margin-top:28px;">The Bread and the Way: Why We Call It BreadWay.org</h3>
+      <blockquote>“Jesus said to him, ‘I am the way, and the truth, and the life. No one comes to the Father except through me.’” — John 14:6</blockquote>
+      <blockquote>“I am the bread of life. Whoever comes to me will never go hungry, and whoever believes in me will never be thirsty.” — John 6:35</blockquote>
+      <p style="max-width:800px; color:#ddd;">
+        The BreadWay is our name for this powerful, symbolic path where Jesus is both the Bread of Life and the Way to the Father. Bread is universal, simple, nourishing, and ever-present. Jesus used it to describe Himself because it was something people understood. Our use of the bread symbol is intentional. It draws from daily life to convey eternal truth. Just as bread feeds the body, Jesus feeds the soul.
+      </p>
+      <p style="max-width:800px; color:#ddd;">
+        When someone sees the bread symbol, it can stir questions, open hearts, and guide conversations toward the life-saving message of Christ.
+      </p>
 
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+      <h3 style="color:#fbbf24; margin-top:28px;">Why Bless Those Who Pass?</h3>
+      <blockquote>“The Lord bless you and keep you; the Lord make His face shine upon you and be gracious to you; the Lord lift up His countenance upon you and give you peace.” — Numbers 6:24–26</blockquote>
+      <p style="max-width:800px; color:#ddd;">
+        When you place a sign in your yard or a sticker on your car that says, “Bless all who pass this house” or “Bless all who pass this car,” you are speaking life and peace over your neighbors, community, and every traveler who crosses your path.
+      </p>
+      <p style="max-width:800px; color:#ddd;">
+        These are not just decorative words. They are active blessings, rooted in Scripture and drawn from a rich biblical tradition of showing kindness to others.
+      </p>
 
-    <!-- Product 1: Pole Sticker -->
-    <div style="flex:1 1 250px; max-width:259px; background:#FFFFFF; border:1px solid rgba(0,0,0,0.1); border-radius:10px; font-family:SQ Market, Helvetica, Arial, sans-serif; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
-      <div style="padding:20px; text-align:center;">
-        <img src="sticker on pole .png" alt="Pole Sticker" style="max-width:100%; border-radius:8px; margin-bottom:12px;">
-        <p style="font-weight:bold; margin-bottom:8px;">Pole Sticker (2.5")</p>
-        <a target="_blank" href="https://square.link/u/1yVRELDj?src=embed" style="display:inline-block;font-size:18px;line-height:48px;height:48px;color:#fff;min-width:212px;background-color:#006aff;text-align:center;border-radius:6px;">Buy now</a>
+      <h3 style="color:#fbbf24; margin-top:28px;">The Scriptural Foundation of Blessing Others</h3>
+      <p style="max-width:800px; color:#ddd;"><strong>Luke 10:25–37 (The Good Samaritan)</strong><br/>The Samaritan showed mercy to a stranger in need. Like him, we are called to extend compassion in everyday encounters. A sticker or sign can be your small act of mercy, blessing someone you may never meet.</p>
+      <p style="max-width:800px; color:#ddd;"><strong>Hebrews 13:2</strong><br/>“Do not forget to show hospitality to strangers, for by so doing some people have entertained angels without knowing it.” Every person who passes is worthy of kindness. Our signs are daily reminders, for you and for those who see them, to live with open hearts and open hands.</p>
+      <p style="max-width:800px; color:#ddd;"><strong>Psalm 121:8</strong><br/>“The Lord will watch over your coming and going both now and forevermore.” As people pass your home or vehicle, this blessing becomes a quiet prayer. It asks that God would protect, guide, and keep them in all their travels.</p>
+      <p style="max-width:800px; color:#ddd;"><strong>Isaiah 30:21</strong><br/>“Whether you turn to the right or to the left, your ears will hear a voice behind you, saying, ‘This is the way; walk in it.’” In a world full of uncertainty, these signs are a soft encouragement that divine guidance is near, for those in transition, in doubt, or on any kind of journey.</p>
+      <p style="max-width:800px; color:#ddd;"><strong>Psalm 121:3</strong><br/>“He will not let your foot slip—He who watches over you will not slumber.” Our message extends this blessing to all who pass. May your steps be steady, your footing secure, and your path aligned with peace.</p>
+
+      <h3 style="color:#fbbf24; margin-top:28px;">A Quiet Witness, A Bold Message</h3>
+      <p style="max-width:800px; color:#ddd;">
+        A sign on your door. A sticker on your rear window. A message in your business or ministry space. These are not loud declarations. They are sacred whispers, quietly covering your space in prayer and blessing everyone who sees them.
+      </p>
+      <ul style="max-width:800px; color:#ddd;">
+        <li>Keep this ministry online</li>
+        <li>Fund more sticker and sign production</li>
+        <li>Distribute free materials to others</li>
+        <li>Share the Good News with those who might otherwise never hear it</li>
+      </ul>
+
+      <!-- Keep the three buttons -->
+      <div style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap; margin-top:18px;">
+        <a href="#contact" class="btn" style="background:#006aff; color:#fff;">Contact Us</a>
+        <a href="#store" class="btn" style="background:#fbbf24; color:#000;">Back to Shop</a>
+        <a href="#donate" class="btn" style="background:#444; color:#fff;">Donate</a>
       </div>
-    </div>
+    </section>
+    <!-- REPLACEMENT CONTENT ends here -->
 
-    <!-- Product 2: Car Stickers -->
-    <div style="flex:1 1 250px; max-width:259px; background:#FFFFFF; border:1px solid rgba(0,0,0,0.1); border-radius:10px; font-family:SQ Market, Helvetica, Arial, sans-serif; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
-      <div style="padding:20px; text-align:center;">
-        <img src="stickers on car.png" alt="Car Stickers" style="max-width:100%; border-radius:8px; margin-bottom:12px;">
-        <p style="font-weight:bold; margin-bottom:8px;">Car/Truck Stickers (5")</p>
-        <a target="_blank" href="https://square.link/u/CcyAUJW7?src=embed" style="display:inline-block;font-size:18px;line-height:48px;height:48px;color:#fff;min-width:212px;background-color:#006aff;text-align:center;border-radius:6px;">Buy now</a>
-      </div>
-    </div>
-
-    <!-- Product 3: Yard Signs -->
-    <div style="flex:1 1 250px; max-width:259px; background:#FFFFFF; border:1px solid rgba(0,0,0,0.1); border-radius:10px; font-family:SQ Market, Helvetica, Arial, sans-serif; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
-      <div style="padding:20px; text-align:center;">
-        <img src="Yard signs.png" alt="Yard Signs" style="max-width:100%; border-radius:8px; margin-bottom:12px;">
-        <p style="font-weight:bold; margin-bottom:8px;">Yard Signs (24&quot;x24&quot;)</p>
-        <a target="_blank" href="https://square.link/u/BTZei0t2?src=embed" style="display:inline-block;font-size:18px;line-height:48px;height:48px;color:#fff;min-width:212px;background-color:#006aff;text-align:center;border-radius:6px;">Buy now</a>
-      </div>
-    </div>
-
-    <!-- Product 4: Combo Pack -->
-    <div style="flex:1 1 250px; max-width:259px; background:#FFFFFF; border:1px solid rgba(0,0,0,0.1); border-radius:10px; font-family:SQ Market, Helvetica, Arial, sans-serif; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
-      <div style="padding:20px; text-align:center;">
-        <img src="Combo Pack.png" alt="Combo Pack" style="max-width:100%; border-radius:8px; margin-bottom:12px;">
-        <p style="font-weight:bold; margin-bottom:8px;">Combo Pack</p>
-        <a target="_blank" href="https://square.link/u/Nxw0Ikx8?src=embed" style="display:inline-block;font-size:18px;line-height:48px;height:48px;color:#fff;min-width:212px;background-color:#006aff;text-align:center;border-radius:6px;">Buy now</a>
-      </div>
-    </div>
-
-  </div>
-</section>
     <section id="donate">
       <h2>Donate</h2>
       <p>Your gift helps us print more Bread stickers and signs, provide free materials to outreach teams, and keep BreadWay.org online.</p>
       <div class="card" style="text-align:center;">
         <a target="_blank" href="https://square.link/u/bEQ5Alff?src=embed" class="btn">Donate</a>
       </div>
-      <p style="font-size:0.8em;color:#ccc;">BreadWay.org is not yet a registered 501(c)(3); gifts may not be tax‑deductible.</p>
+      <p style="font-size:0.8em;color:#ccc;">BreadWay.org is not yet a registered 501(c)(3); gifts may not be tax-deductible.</p>
+    </section>
+
+    <!-- Store -->
+    <section id="store" style="padding-top:20px;">
+      <h2>Store</h2>
+
+      <!-- Bulk-order disclaimer (before products) -->
+      <div class="card" style="background:#fff; color:#000;">
+        <strong>Bulk Orders (6+):</strong>
+        <p style="margin:8px 0 0;">
+          Because quantities are limited and due to fulfillment costs, if you’re ordering more than <strong>six</strong> of any item, please
+          <a href="#contact">contact us via the form below</a> for a custom bulk link. Kindly do not place bulk orders through the Buy Now buttons.
+        </p>
+      </div>
+
+      <!-- Products grid -->
+      <div style="padding:40px; background:#f9f9f9; border-radius:10px;">
+        <h2 style="text-align:center; font-size:28px; margin-bottom:30px; font-family:Helvetica, Arial, sans-serif; color:#000;">Shop BreadWay.org Products</h2>
+
+        <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+          <!-- Product 1: Pole Sticker -->
+          <div style="flex:1 1 250px; max-width:259px; background:#FFFFFF; border:1px solid rgba(0,0,0,0.1); border-radius:10px; font-family:SQ Market, Helvetica, Arial, sans-serif; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+            <div style="padding:20px; text-align:center;">
+              <img src="sticker on pole .png" alt="Pole Sticker" style="max-width:100%; border-radius:8px; margin-bottom:12px;">
+              <p style="font-weight:bold; margin-bottom:8px; color:#000;">Pole Sticker (2.5")</p>
+              <a target="_blank" href="https://square.link/u/1yVRELDj?src=embed" style="display:inline-block;font-size:18px;line-height:48px;height:48px;color:#fff;min-width:212px;background-color:#006aff;text-align:center;border-radius:6px;">Buy now</a>
+            </div>
+          </div>
+
+          <!-- Product 2: Car Stickers -->
+          <div style="flex:1 1 250px; max-width:259px; background:#FFFFFF; border:1px solid rgba(0,0,0,0.1); border-radius:10px; font-family:SQ Market, Helvetica, Arial, sans-serif; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+            <div style="padding:20px; text-align:center;">
+              <img src="stickers on car.png" alt="Car Stickers" style="max-width:100%; border-radius:8px; margin-bottom:12px;">
+              <p style="font-weight:bold; margin-bottom:8px; color:#000;">Car/Truck Stickers (5")</p>
+              <a target="_blank" href="https://square.link/u/CcyAUJW7?src=embed" style="display:inline-block;font-size:18px;line-height:48px;height:48px;color:#fff;min-width:212px;background-color:#006aff;text-align:center;border-radius:6px;">Buy now</a>
+            </div>
+          </div>
+
+          <!-- Product 3: Yard Signs -->
+          <div style="flex:1 1 250px; max-width:259px; background:#FFFFFF; border:1px solid rgba(0,0,0,0.1); border-radius:10px; font-family:SQ Market, Helvetica, Arial, sans-serif; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+            <div style="padding:20px; text-align:center;">
+              <img src="Yard signs.png" alt="Yard Signs" style="max-width:100%; border-radius:8px; margin-bottom:12px;">
+              <p style="font-weight:bold; margin-bottom:8px; color:#000;">Yard Signs (24&quot;x24&quot;)</p>
+              <a target="_blank" href="https://square.link/u/BTZei0t2?src=embed" style="display:inline-block;font-size:18px;line-height:48px;height:48px;color:#fff;min-width:212px;background-color:#006aff;text-align:center;border-radius:6px;">Buy now</a>
+            </div>
+          </div>
+
+          <!-- Product 4: Combo Pack -->
+          <div style="flex:1 1 250px; max-width:259px; background:#FFFFFF; border:1px solid rgba(0,0,0,0.1); border-radius:10px; font-family:SQ Market, Helvetica, Arial, sans-serif; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+            <div style="padding:20px; text-align:center;">
+              <img src="Combo Pack.png" alt="Combo Pack" style="max-width:100%; border-radius:8px; margin-bottom:12px;">
+              <p style="font-weight:bold; margin-bottom:8px; color:#000;">Combo Pack</p>
+              <a target="_blank" href="https://square.link/u/Nxw0Ikx8?src=embed" style="display:inline-block;font-size:18px;line-height:48px;height:48px;color:#fff;min-width:212px;background-color:#006aff;text-align:center;border-radius:6px;">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
@@ -301,3 +354,4 @@
     </footer>
   </body>
 </html>
+
